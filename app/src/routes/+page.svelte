@@ -1,5 +1,6 @@
 <script lang="ts">
     import { Button } from '$lib/components/ui/button/index.js';
+    import DemoCalendar from '$lib/components/homepage-demo/DemoCalendar.svelte';
 </script>
 
 <div class="container mx-auto text-center mt-44">
@@ -15,3 +16,5 @@
         <Button variant="outline">Learn More</Button>
     </div>
 </div>
+
+<DemoCalendar />
