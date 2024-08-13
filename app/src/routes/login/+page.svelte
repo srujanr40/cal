@@ -2,6 +2,15 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { Label } from '$lib/components/ui/label/index.js';
+
+	let email = '';
+	let password = '';
+
+	function setEmail(e: Event) {
+		email = (e.target as HTMLInputElement).value;
+		console.log(email);
+	}
+
 </script>
 
 <div class="w-full lg:grid lg:h-screen xl:h-screen lg:grid-cols-2 xl:min-h-[800px]">
@@ -16,7 +25,7 @@
 			<div class="grid gap-4">
 				<div class="grid gap-2">
 					<Label for="email">Email</Label>
-					<Input id="email" type="email" placeholder="m@example.com" required />
+					<Input id="email" type="email" placeholder="m@example.com" required on:input={setEmail} />
 				</div>
 				<div class="grid gap-2">
 					<div class="flex items-center">
