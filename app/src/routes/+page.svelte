@@ -15,6 +15,6 @@
         <Button href="/login">Get Started</Button>
         <Button variant="outline">Learn More</Button>
     </div>
+    <DemoCalendar />
 </div>
 
-<DemoCalendar />

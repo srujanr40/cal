@@ -24,7 +24,7 @@
 				<a href="/" class="pl-2 font-bold ">Syncal</a>
 			</div>
 			<div class="text-foreground flex items-center font-medium leading-3">
-				<a href="/">Tutorial</a>
+				<a href="/tutorial">Tutorial</a>
 			</div>
 		</div>
 		<div class="inline-block pr-3">
