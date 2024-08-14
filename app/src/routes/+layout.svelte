@@ -5,6 +5,7 @@
 
 	import Sun from 'lucide-svelte/icons/sun';
 	import Moon from 'lucide-svelte/icons/moon';
+	import { CalendarDays } from 'lucide-svelte';
 
 	import { resetMode, setMode } from 'mode-watcher';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
@@ -14,9 +15,17 @@
 <ModeWatcher />
 
 <div class="bg-background fixed left-0 right-0 top-0 z-50 mx-auto">
-	<div class="flex justify-between items-center mx-auto p-2 pl-10">
-		<div class="text-foreground font-medium leading-3">
-			<a href="/">Cal</a>
+	<div class="mx-auto flex items-center justify-between p-2 pl-10">
+		<div class="block flex gap-6">
+			<div class="text-foreground inline-flex items-center font-medium leading-3">
+				<a href="/">
+					<CalendarDays class="cursor-pointer" />
+				</a>
+				<a href="/" class="pl-2 font-bold ">Syncal</a>
+			</div>
+			<div class="text-foreground flex items-center font-medium leading-3">
+				<a href="/">Tutorial</a>
+			</div>
 		</div>
 		<div class="inline-block pr-3">
 			<DropdownMenu.Root>
